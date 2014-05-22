@@ -613,9 +613,18 @@ body.no-literate .content pre > code:hover::-webkit-scrollbar-thumb {
   right: 15px;
   top: 15px;
 }
+.header .right #logo {
+  position: absolute;
+  right: 120px;
+  top: -10px;
+  height: 40px;
+  margin: 0px;
+  padding-right: 10px;
+  width: 40px;
+}
 .header .right iframe {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .header h1 {
   -webkit-font-smoothing: antialiased;
