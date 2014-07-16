@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# execute the command-line java app with all given parameters
+java -jar C3PO_SHARE/c3po-cmd.jar $@
