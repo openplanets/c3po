@@ -19,6 +19,12 @@ export PATH=$PATH:/home/vagrant/MONGO_VERSION/bin/
 mongod & >> /home/vagrant/mongod.log
 
 # start play
+# in case of a un-graceful shutdown we're left with a play PID
+# preventing it from starting properly, so in case delete this here.
+if [ -f C3PO_LIB/RUNNING_PID ]
+    then
+        rm C3PO_LIB/RUNNING_PID
+fi
 C3PO_LIB/web_target/start &
 
 exit 0
