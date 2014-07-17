@@ -127,7 +127,7 @@ function setupC3poShare {
 }
 
 function setupWelcomePages {
-    echo "setting up the welcome pages with links to c3po-play, the commandline-jar download and mongoadmin pages"
+    echo "[setup.sh] setting up the welcome pages with links to c3po-play, the commandline-jar download and mongoadmin pages"
     cp -r /vagrant/.vagrant_settings/welcome $C3PO_SHARE # this is meant to *create* the directory, so it shouldn't exist yet
     createCliJar
     setupC3poShare
