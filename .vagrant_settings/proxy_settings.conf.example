@@ -1,0 +1,16 @@
+# example configuration for cntlm, see also http://cntlm.sourceforge.net/
+# further info on setup: http://computerramblings.wordpress.com/2013/10/24/cntml-as-a-local-proxy-for-ntml-authentication-to-company-proxy/
+
+Username	your_username
+Domain		your_domain
+
+Auth		type_of_authentication(e.g NTLM)
+Password    your_password
+
+Proxy		proxy:port
+
+# leave this as it is
+NoProxy		localhost, 127.0.0.*, 10.*, 192.168.*
+
+# leave this as it is
+Listen		3310
