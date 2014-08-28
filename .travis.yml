@@ -7,7 +7,6 @@ branches:
     - integration-testing
 
 jdk:
-  - oraclejdk6
   - oraclejdk7
   - openjdk6
   - openjdk7
