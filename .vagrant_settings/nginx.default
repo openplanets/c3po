@@ -1,0 +1,11 @@
+server {
+	listen WELCOME_GUEST_PORT; ## listen for ipv4; this line is default and implied
+
+	root C3PO_SHARE;
+
+	server_name localhost;
+
+	location / {
+		autoindex on;
+	}
+}

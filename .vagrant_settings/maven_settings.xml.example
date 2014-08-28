@@ -1,0 +1,14 @@
+<!-- in case you're behind a ntlm proxy, this might be the only way to make maven work properly;
+     just rename this file to maven_settings.xml and make sure the port matches the LISTEN port
+     in proxy_settings.conf ; NOTE that there is intentionally *no* username and password set in here -->
+<settings>
+  <proxies>
+    <proxy>
+      <active>true</active>
+      <protocol>http</protocol>
+      <host>127.0.0.1</host>
+      <port>3310</port>
+    </proxy>
+  </proxies>
+</settings>
+
