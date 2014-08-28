@@ -11,3 +11,5 @@ jdk:
   - openjdk6
   - openjdk7
 
+services:
+  - mongodb
