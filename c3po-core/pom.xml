@@ -39,42 +39,6 @@
 				<artifactId>cobertura-maven-plugin</artifactId>
 				<version>2.5.1</version>
 			</plugin>
-			<plugin>
-				<groupId>com.github.joelittlejohn.embedmongo</groupId>
-				<artifactId>embedmongo-maven-plugin</artifactId>
-				<version>0.1.12</version>
-				<executions>
-					<execution>
-						<phase>test-compile</phase>
-						<id>start</id>
-						<goals>
-							<goal>start</goal>
-						</goals>
-						<configuration>
-							<version>2.0.5</version>
-							<!-- optional, default 2.2.1 -->
-
-							<logFileEncoding>utf-8</logFileEncoding>
-							<!-- optional, can be used when logging=file, default is utf-8 -->
-
-							<!-- proxy config here 
-							<proxyHost>myproxy.company.com</proxyHost> 
-							<proxyPort>8080</proxyPort>
-							<proxyUser>joebloggs</proxyUser>
-							<proxyPassword>pa55w0rd</proxyPassword>
-							-->
-
-						</configuration>
-					</execution>
-					<execution>
-						<phase>package</phase>
-						<id>stop</id>
-						<goals>
-							<goal>stop</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
 		</plugins>
 
 		<resources>
