@@ -31,13 +31,13 @@ public class XMLUtilsTest {
 
   @Test
   public void shouldPassXMLValidation() throws Exception {
-    boolean valid = XMLUtils.validate(new File("src/test/resources/valid.xml"));
+    boolean valid = XMLUtils.validate(new File(this.getClass().getResource("/valid.xml").getPath()));
     Assert.assertTrue(valid);
   }
 
   @Test
   public void shouldFailXMLValidation() throws Exception {
-    boolean valid = XMLUtils.validate(new File("src/test/resources/invalid.xml"));
+    boolean valid = XMLUtils.validate(new File(this.getClass().getResource("/invalid.xml").getPath()));
     Assert.assertFalse(valid);
   }
 }
