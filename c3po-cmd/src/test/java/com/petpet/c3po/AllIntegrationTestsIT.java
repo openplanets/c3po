@@ -6,6 +6,6 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
 @SuiteClasses({ FitsIntegrationTests.class, TikaIntegrationTests.class })
-public class AllIntegrationTest {
+public class AllIntegrationTestsIT {
 
 }
