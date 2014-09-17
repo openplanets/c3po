@@ -14,6 +14,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <fcrepo.version>4.0.0-beta-02</fcrepo.version>
+      <scape-platform-datamodel.version>0.1.8-SNAPSHOT</scape-platform-datamodel.version>
   </properties>
 
   <build>
@@ -114,6 +116,36 @@
 	  <artifactId>drools-jsr94</artifactId>
 	  <version>5.5.0.Final</version>
 	</dependency>
+      <dependency>
+          <groupId>eu.scape-project.model</groupId>
+          <artifactId>scape-platform-datamodel</artifactId>
+          <version>${scape-platform-datamodel.version}</version>
+      </dependency>
+      <dependency>
+          <groupId>eu.scape-project.model</groupId>
+          <artifactId>scape-platform-datamodel</artifactId>
+          <version>${scape-platform-datamodel.version}</version>
+          <type>test-jar</type>
+          <scope>test</scope>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpclient</artifactId>
+          <version>4.2</version>
+      </dependency>
+      <dependency>
+          <groupId>org.apache.httpcomponents</groupId>
+          <artifactId>httpcore</artifactId>
+          <version>4.2</version>
+      </dependency>
+      <dependency>
+          <groupId>com.sun.jersey</groupId>
+          <artifactId>jersey-bundle</artifactId>
+          <version>1.10-b01</version>
+      </dependency>
+
+
+
   </dependencies>
 
 </project>
