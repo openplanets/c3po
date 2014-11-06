@@ -24,19 +24,18 @@
   <!-- JQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
-  <!-- SCAPE theme -->
-  <link type="image/x-icon" href="http://www.scape-project.eu/wp-content/themes/medani/images/favicon.ico" rel="shortcut icon"/>
-  <link  href='css/style.css' rel='stylesheet'>
-
   <!-- Flatdoc theme -->
   <script src='flatdoc/v/0.8.1/legacy.js'></script>
   <script src='flatdoc/v/0.8.1/flatdoc.js'></script>
   <script src='flatdoc/v/0.8.1/theme-white/script.js'></script>
 
+  <!-- SCAPE theme -->
+  <link  href='css/style.css' rel='stylesheet'>
 
   <!-- Meta -->
   <meta content="c3po" property="og:title">
   <meta content="About the c3po project." name="description">
+  <link type="image/x-icon" href="http://www.scape-project.eu/wp-content/themes/medani/images/favicon.ico" rel="shortcut icon"/>
 
   <!-- Initializer -->
   <script>
@@ -48,7 +47,7 @@
       }
     };
     
-    pageUpdate.loadContent('ABOUT.md')
+    pageUpdate.loadContent('README.md')
   </script>
 </head>
 <body class='no-literate' role='flatdoc'>
@@ -57,9 +56,7 @@
     <div class='left'>
       <h1>c3po</h1>
       <ul>
-        <li><a href="#" onClick="pageUpdate.loadContent('ABOUT.md'); return false;">About</a></li>
         <li><a href="#" onClick="pageUpdate.loadContent('README.md'); return false;">Usage</a></li>
-        <li><a href="#" onClick="pageUpdate.loadContent('CONTRIBUTE.md'); return false;">Contribute</a></li>
         <li><a href="https://github.com/openplanets/c3po" target="_blank">View on GitHub</a></li>
         <li><a href="https://github.com/openplanets/c3po/issues" target="_blank">Issues</a></li>
       </ul>
